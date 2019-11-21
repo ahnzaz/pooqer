@@ -1,9 +1,22 @@
+const path = require('path');
+
 module.exports = (() => {
     return {
-        entry: './compiled/index.js',
+        mode: 'development',
+        entry: './src/index.ts',
+        module: {
+            rules: [{
+                test: /\.tsx?/,
+                use: 'ts-loader',
+                exclude: '/node_modules/',
+            }]
+        },
+        resolve: {
+            extensions: ['.tsx', 'ts', '.js'],
+        },
         output: {
-            path: path.resolve(__dirname, 'bundled'),
+            path: path.resolve(__dirname, 'dist/js'),
             filename: 'bundle.js'
-        }
+        },
     }
 })()
