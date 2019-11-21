@@ -4,7 +4,10 @@
   "description": "wavve customizing project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc --build ./tsconfig.json",
+    "build": "npx webpack",
+    "start": "npx webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
