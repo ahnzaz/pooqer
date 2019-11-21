@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ahnzaz/pooqer/issues"
   },
-  "homepage": "https://github.com/ahnzaz/pooqer#readme"
+  "homepage": "https://github.com/ahnzaz/pooqer#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
 }
