@@ -1,0 +1,19 @@
+{
+  "name": "pooqer",
+  "version": "1.0.0",
+  "description": "wavve customizing project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahnzaz/pooqer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahnzaz/pooqer/issues"
+  },
+  "homepage": "https://github.com/ahnzaz/pooqer#readme"
+}
