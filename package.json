@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx tsc --build ./tsconfig.json",
+    "clean": "npx shx rm -fr ./dist/js",
     "build": "npx webpack",
-    "start": "npx webpack-dev-server"
+    "start": "npm run clean && npm run build && npx webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/ahnzaz/pooqer#readme",
   "devDependencies": {
+    "rxjs": "^6.5.3",
+    "shx": "^0.3.2",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
